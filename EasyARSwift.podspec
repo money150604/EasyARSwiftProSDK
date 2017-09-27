@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/money150604/EasyARSwiftProSDK.git", :tag => "#{s.version}" }
 
   s.source_files  = "EasyARSwift", "EasyARSwift/**/*.{h,m,swift}"
+  spec.libraries  = 'c++'
 
   s.frameworks = "CoreMotion", "Accelerate", "UIKit", "OpenGLES", "CoreVideo", "CoreMedia", "CoreImage", "CoreGraphics", "AVFoundation"
   s.vendored_frameworks = "*.framework"
