@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "http://easyar.cn/"
 
-  s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
   s.author             = { "wah" => "money01314@gmail.com" }
   s.platform     = :ios
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.source_files  = "EasyARSwift", "EasyARSwift/**/*.{h,m,swift}"
 
   s.frameworks = "CoreMotion", "Accelerate", "UIKit", "OpenGLES", "CoreVideo", "CoreMedia", "CoreImage", "CoreGraphics", "AVFoundation"
-  s.vendored_frameworks = "EasyARSwift/*.framework"
+  s.vendored_frameworks = "*.framework"
 
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4' }
 
